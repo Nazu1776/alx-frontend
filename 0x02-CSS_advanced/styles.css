@@ -1,27 +1,16 @@
-import random
-
-# Define the HTML content with the correct CSS file path
-html_content = f"""
 <!DOCTYPE html>
-<html lang={"\"en\""} dir={"\"ltr\""}>
+<html lang="en" dir="ltr">
   <head>
-    <meta charset={"\"utf-8\""}>
-    <meta name={"\"viewport\""} content={"\"width=device-width, initial-scale=1, viewport-fit=cover\""}>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Homepage - Techium</title>
-    <meta name={"\"description\""} content={"\"Description of the page less than 150 characters\""}>
-    <link rel={"\"icon\""} type={"\"image/png\""} href={"\"images/favicon.jpg\""}>
-    <link href={"\"https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap\""} rel={"\"stylesheet\""}>
-    <link rel={"\"stylesheet\""} href={"\"styles.css?_=" + str(random.randint(1, 1000))"}> <!-- Replace 'styles.css' with the path to your CSS file -->
+    <meta name="description" content="Description of the page less than 150 characters">
+    <link rel="icon" type="image/png" href="images/favicon.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='css/styles.css'> <!-- Replace # with the correct CSS file path -->
   </head>
   <body>
     <!-- Your HTML content here -->
   </body>
 </html>
-"""
-
-# Write the HTML content to index.html file
-with open('index.html', 'w') as file:
-    file.write(html_content)
-
-print("index.html file created successfully.")
 
