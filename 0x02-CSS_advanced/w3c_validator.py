@@ -18,11 +18,11 @@ def validate_html(html_code):
             print("The HTML is valid!")
         else:
             for message in messages:
-                print(f"Type: {message.get('type')}")
-                print(f"Message: {message.get('message')}")
-                print(f"Extract: {message.get('extract')}")
-                print(f"First Line: {message.get('firstLine')}")
-                print(f"Last Line: {message.get('lastLine')}")
+                print("Type: {}".format(message.get('type')))
+                print("Message: {}".format(message.get('message')))
+                print("Extract: {}".format(message.get('extract')))
+                print("First Line: {}".format(message.get('firstLine')))
+                print("Last Line: {}".format(message.get('lastLine')))
                 print("-" * 40)
     else:
         print("No messages in the response. Something might have gone wrong.")
